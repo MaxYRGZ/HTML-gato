@@ -1,0 +1,40 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura del viewport */
+    margin: 0; /* Eliminamos márgenes */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo del contenedor del juego */
+.game-container {
+    text-align: center; /* Centramos el texto */
+}
+
+/* Estilo del tablero del juego, usando un grid */
+.board {
+    display: grid; /* Usamos grid para el tablero */
+    grid-template-columns: repeat(3, 100px); /* Tres columnas de 100px cada una */
+    gap: 5px; /* Espaciado entre las celdas */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo de cada celda del tablero */
+.cell {
+    width: 100px; /* Ancho de la celda */
+    height: 100px; /* Altura de la celda */
+    border: 2px solid #333; /* Borde de la celda */
+    font-size: 2em; /* Tamaño de fuente grande */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la celda */
+}
+
+/* Estilo para el efecto hover en las celdas */
+.cell:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+}
